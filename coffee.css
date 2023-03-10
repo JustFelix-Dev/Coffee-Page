@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    padding:0;
+    background-image:url(pexels-lukas-1419939.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-position: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.loginbox{
+    width: 50%;
+    min-width:300px;
+    height: 70%;
+    background-color: rgb(43, 17, 17);
+    color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50% );
+    box-sizing: border-box;
+    padding:2rem 2rem;
+    border-radius: 0 10%;
+    box-shadow: 10px 10px 14px gray;
+}
+
+
+.avatar{
+    width:100px;
+    height:100px;
+    background-color:white;
+    color: white;
+    border-radius: 50%;
+    position:absolute;
+    top: -10%;
+    left: 41%;
+}
+h1{
+    margin-right:6%;
+    padding: 10px 0 10px 20px;
+    text-align:center;
+    font-size: 1.5rem;
+}
+
+.loginbox p{
+    margin: 0;
+    padding:0;
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+
+.loginbox input:hover {
+    transition: ease-out;
+    transition-property: border-bottom;
+    transition-duration: 200ms;
+    border-bottom: 2px solid orange;
+
+
+}
+form input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid orange;
+    outline: none;
+    width: 92%;
+    margin-bottom: 20px;
+    background-color:transparent;
+    caret-color:gold;
+    height: 50px;
+    color:rgb(214, 147, 22);
+    font-size:1rem;
+}
+
+.loginbox input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 40px;
+    width: 40%;
+    margin-left:28%;
+    background-color: rgba(239, 186, 10, 0.6);
+    border-radius: 20px;
+    cursor: grab;
+}
+
+.loginbox input[type="submit"]:hover{
+    background-color: orange;
+    }
+
+.loginbox a{
+    font-size: 1rem;
+    color:orange;
+    text-align: center;
+    text-decoration:none;
+    line-height: 25px;
+}
+/* Responsiveness */
+@media screen and (max-width:850px){
+    html{
+        font-size: 15px;
+    }
+    .avatar{
+        width:80px;
+        height:80px;
+        left: 35%;
+    }
+}
